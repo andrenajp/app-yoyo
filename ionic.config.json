@@ -1,0 +1,7 @@
+{
+  "name": "yoyo-seller",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
