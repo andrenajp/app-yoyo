@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {PopoverController, AlertController} from '@ionic/angular';
+import {PopoverController, AlertController,NavController} from '@ionic/angular';
 import {LanguagePopoverPage} from '../pages/language-popover/language-popover.page';
 import {TranslateService} from '@ngx-translate/core';
 @Component({
@@ -13,7 +13,8 @@ params = {
 }
   constructor(private popoverCtrl : PopoverController,
   private alertCtrl : AlertController,
-  private translate : TranslateService
+  private translate : TranslateService,
+  public navCtrl: NavController
   ) {}
 
   async openLanguagePopover(ev){
@@ -30,5 +31,9 @@ params = {
       buttons : this.translate.instant('ALERT.buttons')
     });
     alert.present();
+  }
+  goPage(){
+    console.log('gopage ok');
+    this.navCtrl.navigateForward('/recherche');
   }
 }

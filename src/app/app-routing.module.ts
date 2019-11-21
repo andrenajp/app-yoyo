@@ -8,6 +8,10 @@ const routes: Routes = [
     path: 'language-popover',
     loadChildren: () => import('./pages/language-popover/language-popover.module').then( m => m.LanguagePopoverPageModule)
   },
+  {
+    path: 'recherche',
+    loadChildren: () => import('./pages/recherche/recherche.module').then( m => m.RecherchePageModule)
+  },
 ];
 
 @NgModule({

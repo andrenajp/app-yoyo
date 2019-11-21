@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-icon class="the_icon" name="search" color="primary"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="start">
+      <ion-icon class="the_icon" name="create" color="primary"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="start" class="">
+      <ion-icon class="the_icon" name="list" color="primary"></ion-icon>
+    </ion-buttons>
+    <ion-buttons slot="start" class="">
+      <ion-icon class="the_icon" name="more" color="primary"></ion-icon>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-segment class="fixe_bas">
+    <ion-segment-button value="friends">
+      <ion-icon name="search"  class="icon_segment"></ion-icon>
+      {{ "TAB2_TITLE" | translate }}
+    </ion-segment-button>
+    <ion-segment-button value="enemies">
+      <ion-icon name="book"  class="icon_segment"></ion-icon>
+      {{ "CATALOGUE" | translate }}
+    </ion-segment-button>
+  </ion-segment>
+</ion-content>
